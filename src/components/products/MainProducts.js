@@ -38,6 +38,7 @@ const MainProducts = () => {
   }, [dispatch, successDelete, successDeleteImage]);
 
   // Search product
+  // eslint-disable-next-line array-callback-return
   const searchProducts = products?.filter((product) => {
     if (searchProduct === "") {
       return product;
